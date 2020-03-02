@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="en">
+    <title></title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: rgb(120,200,150);
+        }
+        .container{
+            flex-flow: wrap;
+            justify-content: center;
+            display: flex;
+            
+        }
+        .f1,.f2,.f3,.f4{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            border: 2px solid white;
+            margin: 3em;
+        }
+        p{
+            /*margin: 0.2em;*/
+            text-align: center;
+            border-radius: 20px;
+            padding: 20px;
+            background: rgba(140,10,20,1);
+        }
+        .f1 p,.f3 p{
+            flex-grow: 1;
+        }        
+        .f2 p{
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        #set{
+            flex-grow: 0.5;
+        }
+        #huit{
+            flex-grow: 0.5;
+        }
+        .f4 p{
+            flex-grow: 1;
+        }
+        #setze{
+            flex-grow: 0.33;
+        }
+        #diset{
+            flex-grow: 0.33;
+        }
+        #divuit{
+            flex-grow: 0.33;
+        }
+        #dinou{
+            flex-grow: 0.5;
+        }
+        #vint{
+            flex-grow: 0.5;
+        }
+        </style>
+    </head>
+    <body>        
+        <main class="container">
+            <div class="f1">
+            <p>1</p>
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+                </div>
+            <div class="f2">
+            <p>5</p>
+            <p>6</p>
+            <p id="set">7</p>
+            <p id="huit">8</p>
+            <p>9</p>
+                </div>
+                <div class="f3">
+            <p>10</p>
+            <p>11</p>
+            <p>12</p>
+            <p>13</p>
+                    </div>
+                    <div class="f4">
+            <p>14</p>
+            <p>15</p>
+            <p id="setze">16</p>
+            <p id="diset">17</p>
+            <p id="divuit">18</p>
+            <p id="dinou">19</p>
+            <p id="vint">20</p>
+                        </div>
+        </main>    
+    </body>
+</html>
